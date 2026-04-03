@@ -1,0 +1,44 @@
+Trained on 108 Kafka / 104 non-Kafka sentences
+  CV Accuracy — Logistic Regression: 92.5%  |  Naive Bayes: 90.1%
+
+============================================================
+  Kafka Classifier — type 'quit' to exit
+============================================================
+Enter a sentence: Good morning to you!
+
+  Model                  Verdict        Kafka%   Bar
+  ────────────────────── ────────────── ──────── ────────────────────────────
+  Logistic Regression    🌞 NOT KAFKA    47.9%   [█████████████░░░░░░░░░░░░░░░]
+  Naive Bayes            🌞 NOT KAFKA    46.0%   [████████████░░░░░░░░░░░░░░░░]
+  ────────────────────── ────────────── ──────── ────────────────────────────
+  Ensemble avg           🌞 NOT KAFKA    47.0%   [█████████████░░░░░░░░░░░░░░░]
+
+Enter a sentence: The caged bird sings because it must, and it must sing or die.
+
+  Model                  Verdict        Kafka%   Bar
+  ────────────────────── ────────────── ──────── ────────────────────────────
+  Logistic Regression    🪲 KAFKA        53.2%   [██████████████░░░░░░░░░░░░░░]
+  Naive Bayes            🪲 KAFKA        75.7%   [█████████████████████░░░░░░░]
+  ────────────────────── ────────────── ──────── ────────────────────────────
+  Ensemble avg           🪲 KAFKA        64.5%   [██████████████████░░░░░░░░░░]
+
+Enter a sentence: We went for a family picnic today and had doughnuts
+
+  Model                  Verdict        Kafka%   Bar
+  ────────────────────── ────────────── ──────── ────────────────────────────
+  Logistic Regression    🌞 NOT KAFKA    40.5%   [███████████░░░░░░░░░░░░░░░░░]
+  Naive Bayes            🌞 NOT KAFKA    37.7%   [██████████░░░░░░░░░░░░░░░░░░]
+  ────────────────────── ────────────── ──────── ────────────────────────────
+  Ensemble avg           🌞 NOT KAFKA    39.1%   [██████████░░░░░░░░░░░░░░░░░░]
+
+Enter a sentence: Today was an overwhelmingly depressing outing
+
+  Model                  Verdict        Kafka%   Bar
+  ────────────────────── ────────────── ──────── ────────────────────────────
+  Logistic Regression    🪲 KAFKA        64.3%   [██████████████████░░░░░░░░░░]
+  Naive Bayes            🪲 KAFKA        76.3%   [█████████████████████░░░░░░░]
+  ────────────────────── ────────────── ──────── ────────────────────────────
+  Ensemble avg           🪲 KAFKA        70.3%   [███████████████████░░░░░░░░░]
+
+Enter a sentence: quit
+Goodbye.
